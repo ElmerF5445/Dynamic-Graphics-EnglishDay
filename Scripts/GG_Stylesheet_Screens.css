@@ -1,0 +1,363 @@
+@font-face {
+	font-family: "Raleway";
+	src: url("../Assets/Fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Roboto";
+	src: url("../Assets/Fonts/Roboto-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Cold_Warm";
+	src: url("../Assets/Fonts/ColdWarm-lwve.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+*[Animation_State="Animation_State_Paused"]{
+    animation-play-state: paused;
+}
+
+*[Animation_State="Animation_State_Playing"]{
+    animation-play-state: running;
+}
+
+.GG_Title_Banner{
+    width: 70%;
+    user-select: none;
+    pointer-events: none;
+    transform: translateY(-20px);
+    animation-name: Bounce_Slight;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+}
+
+.GG_Slide{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: none;
+    transition: 0.75s;
+    position: absolute;
+}
+
+.Slide_Specific_Title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    white-space: none;
+    animation-play-state: paused;
+}
+
+
+
+@keyframes Bounce_Slight{
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.GG_Title_BG_Rectangles{
+    width: 95%;
+    height: 95%;
+    border: solid rgb(168, 7, 218) 20px;
+    position: absolute;
+    animation-name: BG_Rectangles;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    opacity: 0%;
+    box-shadow: inset 0px 0px 10px 5px rgb(168, 7, 218);
+}
+
+.GG_Title_BG_Rectangles:nth-child(1){
+    animation-delay: 0s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(2){
+    animation-delay: 2s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(3){
+    animation-delay: 4s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(5){
+    animation-delay: 6s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(6){
+    animation-delay: 8s;
+}
+
+.GG_Title_BG_Rectangles:nth-child(7){
+    animation-delay: 10s;
+}
+
+@keyframes BG_Rectangles{
+    0% {
+        width: 0%;
+        height: 0%;
+        /* border-width: 30px; */
+        opacity: 0%;
+        /* transform: rotate(0deg); */
+    }
+
+    100%{
+        width: 110%;
+        height: 110%;
+        /* border-width: 40px; */
+        opacity: 75%;
+        /* transform: rotate(45deg); */
+    }
+}
+
+.GG_Slide_Title{
+    color: white;
+    margin: 0;
+}
+
+.GG_Screen{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.GG_Screen_Slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+.TitleScreen_Title_Main{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.TitleScreen_Title_Text{
+    position: absolute;
+    height: 50vh;
+    opacity: 0%;
+    animation-name: TitleScreen_Title_Text_Flicker;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    transition: 0.5s;
+}
+
+.TitleScreen_Title_Text#TSTT_2{
+    animation-duration: 0.1s;
+    animation-iteration-count: 4;
+    animation-delay: 2.3s;
+}
+
+.TitleScreen_Title_Text#TSTT_3{
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+}
+
+.TitleScreen_Title_Text#TSTT_4{
+    animation-duration: 0.12s;
+    animation-iteration-count: 2;
+    animation-delay: 1.5s;
+}
+
+.TitleScreen_Title_Text#TSTT_5{
+    animation-duration: 0.1.7s;
+    animation-iteration-count: 4;
+    animation-delay: 2s;
+}
+
+.TitleScreen_Title_Text_Glow{
+    position: absolute;
+    height: 50vh;
+    opacity: 50%;
+    opacity: 0%;
+    animation-name: TitleScreen_Title_Text_Glow_Flicker;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    transition: 0.5s;
+}
+
+.TitleScreen_Title_Text_Glow#TSTTG_2{
+    animation-duration: 0.1s;
+    animation-iteration-count: 4;
+    animation-delay: 2.3s;
+}
+
+.TitleScreen_Title_Text_Glow#TSTTG_3{
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+}
+
+.TitleScreen_Title_Text_Glow#TSTTG_4{
+    animation-duration: 0.12s;
+    animation-iteration-count: 2;
+    animation-delay: 1.5s;
+}
+
+.TitleScreen_Title_Text_Glow#TSTTG_5{
+    animation-duration: 0.1.7s;
+    animation-iteration-count: 4;
+    animation-delay: 2s;
+}
+
+
+.TitleScreen_Title_Text_Backlight{
+    position: absolute;
+    height: 50vh;
+    opacity: 50%;
+    opacity: 0%;
+    animation-name: TitleScreen_Title_Text_Backlight_Fade;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    transition: 0.5s;
+}
+
+.TitleScreen_Background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.TitleScreen_Background_Main{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 16/9;
+    transform: scale(1.5);
+    animation-name: TitleScreen_Background_Main_Zoom;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.TitleScreen_Background_Letters{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 16/9;
+    opacity: 20%;
+    animation-name: Titlescreen_Background_Letters_Bob;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+@keyframes TitleScreen_Background_Main_Zoom{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes Titlescreen_Background_Letters_Bob{
+    0% {
+        transform: scale(1) rotate(-5deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(5deg);
+    }
+    100% {
+        transform: scale(1) rotate(-5deg);
+    }
+}
+
+@keyframes TitleScreen_Title_Text_Backlight_Fade{
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 90%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes TitleScreen_Title_Text_Flicker{
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 20%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes TitleScreen_Title_Text_Glow_Flicker{
+    0% {
+        opacity: 50%;
+    }
+    50% {
+        opacity: 20%;
+    }
+    100% {
+        opacity: 50%;
+    }
+}
+
+.Countdown_Text{
+    font-family: Cold_Warm;
+    color:rgb(255, 213, 3);
+    text-align: center;
+    font-size: 60vh;
+}
+
+.Section_Title{
+    font-family: Hauser;
+    color:rgb(255, 213, 3);
+    text-align: center;
+    font-size: 30vh;
+    position: absolute;
+    margin: 0;
+    line-height: 0.9;
+    -webkit-text-stroke: 4px rgb(151, 78, 9);;
+}
+
+.Intro_Text{
+    font-family: Hansief;
+    color: white;
+    text-align: center;
+    font-size: 7vh;
+    text-transform: uppercase;
+}
