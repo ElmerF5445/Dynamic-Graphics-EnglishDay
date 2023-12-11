@@ -315,7 +315,7 @@
 		</div>
 	</header>
 	<div class="Page_Sidebar" id="pageElement_Sidebar">
-		<div class="Sidebar_Item" id="TabIDHere" onclick="trigger_ChangeTab_test(this.id)">
+		<div class="Sidebar_Item" id="Screen_1" onclick="trigger_ChangeTab_test(this.id)">
 			<div class="Sidebar_Item_Letter" id="tabIcon_Screen_1">
 				<h2 class="Sidebar_Item_Letter_Text"> 1 </h2>
 			</div>
@@ -325,6 +325,18 @@
 			<!-- Specify the title of the tab that will be displayed in the header (must have pageelement_header_UsesTitles enabled) -->
 			<p class="Sidebar_Item_Text_forHeader"style="display: none" id="tabTitle_Screen_1">
 				Screen 1 - Opening Ceremony
+			</p>
+		</div>
+		<div class="Sidebar_Item" id="Screen_2" onclick="trigger_ChangeTab_test(this.id)">
+			<div class="Sidebar_Item_Letter" id="tabIcon_Screen_2">
+				<h2 class="Sidebar_Item_Letter_Text"> 2 </h2>
+			</div>
+			<p class="Sidebar_Item_Text">
+				Filipino Genius
+			</p>
+			<!-- Specify the title of the tab that will be displayed in the header (must have pageelement_header_UsesTitles enabled) -->
+			<p class="Sidebar_Item_Text_forHeader"style="display: none" id="tabTitle_Screen_2">
+				Screen 2 - Filipino Genius
 			</p>
 		</div>
 	</div>
@@ -461,20 +473,16 @@
 					</div>
 				</div>
 				
-				
-				
-				<h1 class="General_Title">
-					Invocation, Nationl Anthem, Opening Remarks
+				<!--<h1 class="General_Title">
+					Character counter
 				</h1>
-				<div class="General_Button" onclick="Slides_SwitchToSlide('Invocation')">
-					Switch to Invocation
+				<textarea type="text" class="Input_Text Input_Text_Long" placeholder="Type words separated by line breaks"></textarea>
+				<div class="General_Button" onclick="FG_Points_CountCharacters('Team1')">
+					Count characters and add points to team 1
 				</div>
-				<div class="General_Button" onclick="Slides_SwitchToSlide('National_Anthem')">
-					Switch to National Anthem
-				</div>
-				<div class="General_Button" onclick="Slides_SwitchToSlide('Opening_Remarks')">
-					Switch to Opening Remarks
-				</div>
+				<div class="General_Button" onclick="FG_Points_CountCharacters('Team2')">
+					Count characters and add points to team 1
+				</div>-->
 
 				<h1 class="General_Title">
 					Blank slides
