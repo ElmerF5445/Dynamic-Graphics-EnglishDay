@@ -339,6 +339,18 @@
 				Screen 2 - Filipino Genius
 			</p>
 		</div>
+		<div class="Sidebar_Item" id="Screen_3" onclick="trigger_ChangeTab_test(this.id)">
+			<div class="Sidebar_Item_Letter" id="tabIcon_Screen_3">
+				<h2 class="Sidebar_Item_Letter_Text"> 3 </h2>
+			</div>
+			<p class="Sidebar_Item_Text">
+				Human Scrabble
+			</p>
+			<!-- Specify the title of the tab that will be displayed in the header (must have pageelement_header_UsesTitles enabled) -->
+			<p class="Sidebar_Item_Text_forHeader"style="display: none" id="tabTitle_Screen_3">
+				Screen 3 - Human Scrabble
+			</p>
+		</div>
 	</div>
 	<main class="Page_Content" id="pageElement_Content" data-id="">
 		<div class="Page_MainContent" id="Page_MainContent" data-id="">
@@ -412,8 +424,11 @@
 				<h1 class="General_Title">
 					Title Screen
 				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('FG_TitleScreen_Parent')">
+					Switch to event title screen
+				</div>
 				<div class="General_Button" onclick="Slides_SwitchToSlide('FG_TitleScreen')">
-					Switch to this slide
+					Switch to segment title screen
 				</div>
 				
 				
@@ -493,7 +508,97 @@
 				<div class="General_Button" onclick="Slides_SwitchToSlide('Empty_Slide')">
 					Blank screen
 				</div>
-			</div>					
+			</div>	
+
+			<div class="Tab_Container" id="tab_Screen_3">
+				<h1 class="General_Title">
+					Title Screen
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('HS_TitleScreen_Parent')">
+					Switch to event title screen
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('HS_TitleScreen')">
+					Switch to segment title screen
+				</div>
+				
+				
+				<h1 class="General_Title">
+					Timer
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('HS_Countdown')">
+					Switch to this slide
+				</div>
+				<p class="General_Paragraph">
+					Timer values
+				</p>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px;">
+					<input type="text" class="Input_Text" placeholder="Starting minutes" id="HS_Countdown_StartingMinutes"/>
+					<input type="text" class="Input_Text" placeholder="Starting seconds" id="HS_Countdown_StartingSeconds"/>
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 10px; margin-bottom: 10px;">
+					<div class="General_Button" onclick="HS_SetTimer()">
+						Set values
+					</div>
+					<div class="General_Button" onclick="Timer_Start_Timer()">
+						Start timer
+					</div>
+					<div class="General_Button" onclick="Timer_Stop_Timer()">
+						Stop timer
+					</div>
+				</div>
+
+				<h1 class="General_Title">
+					Pointing Screen
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('HS_PointingScreen')">
+					Switch to this slide
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
+					<h1 class="General_Title">
+						0
+					</h1>
+					<h1 class="General_Title">
+						0
+					</h1>
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
+					<p class="General_Paragraph">
+						Team 1
+					</p>
+					<p class="General_Paragraph">
+						Team 2
+					</p>
+					<input type="text" class="Input_Text" placeholder="Team 1 points" id="HS_Points_Team_1"/>
+					<input type="text" class="Input_Text" placeholder="Team 2 points" id="HS_Points_Team_2"/>
+					<div class="General_Button" onclick="FG_Points_UpdateScore('Team1')">
+						Update score for Team 1
+					</div>
+					<div class="General_Button" onclick="FG_Points_UpdateScore('Team2')">
+						Update score for Team 2
+					</div>
+				</div>
+				
+				<h1 class="General_Title">
+					Character counter
+				</h1>
+				<textarea type="text" class="Input_Text Input_Text_Long" placeholder="Type words separated by line breaks" id="HS_WordList"></textarea>
+				<div class="General_Button" onclick="HS_Points_CountCharacters('Team1')">
+					Count characters and add points to team 1
+				</div>
+				<div class="General_Button" onclick="HS_Points_CountCharacters('Team2')">
+					Count characters and add points to team 1
+				</div>
+
+				<h1 class="General_Title">
+					Blank slides
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('Default')">
+					Black screen
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('Empty_Slide')">
+					Blank screen
+				</div>
+			</div>	
 		</div>
 
 
