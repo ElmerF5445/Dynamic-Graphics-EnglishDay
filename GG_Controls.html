@@ -395,7 +395,97 @@
 				<div class="General_Button" onclick="Slides_SwitchToSlide('Empty_Slide')">
 					Blank screen
 				</div>
-			</div>			
+			</div>	
+			<div class="Tab_Container" id="tab_Screen_2">
+				<h1 class="General_Title">
+					Title Screen
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('FG_TitleScreen')">
+					Switch to this slide
+				</div>
+				
+				
+				<h1 class="General_Title">
+					Timer
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('FG_Countdown')">
+					Switch to this slide
+				</div>
+				<p class="General_Paragraph">
+					Timer values
+				</p>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px;">
+					<input type="text" class="Input_Text" placeholder="Starting minutes" id="FG_Countdown_StartingMinutes"/>
+					<input type="text" class="Input_Text" placeholder="Starting seconds" id="FG_Countdown_StartingSeconds"/>
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 10px; margin-bottom: 10px;">
+					<div class="General_Button" onclick="FG_SetTimer()">
+						Set values
+					</div>
+					<div class="General_Button" onclick="Timer_Start_Timer()">
+						Start timer
+					</div>
+					<div class="General_Button" onclick="Timer_Stop_Timer()">
+						Stop timer
+					</div>
+				</div>
+
+				<h1 class="General_Title">
+					Pointing Screen
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('Intro_1')">
+					Switch to this slide
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
+					<h1 class="General_Title">
+						0
+					</h1>
+					<h1 class="General_Title">
+						0
+					</h1>
+				</div>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
+					<p class="General_Paragraph">
+						Team 1
+					</p>
+					<p class="General_Paragraph">
+						Team 2
+					</p>
+					<input type="text" class="Input_Text" placeholder="Team 1 points" id="FG_Points_Team_1"/>
+					<input type="text" class="Input_Text" placeholder="Team 2 points" id="FG_Points_Team_2"/>
+					<div class="General_Button" onclick="FG_Points_UpdateScore('Team1')">
+						Update score for Team 1
+					</div>
+					<div class="General_Button" onclick="FG_Points_UpdateScore('Team2')">
+						Update score for Team 2
+					</div>
+				</div>
+				
+				
+				
+				<h1 class="General_Title">
+					Invocation, Nationl Anthem, Opening Remarks
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('Invocation')">
+					Switch to Invocation
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('National_Anthem')">
+					Switch to National Anthem
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('Opening_Remarks')">
+					Switch to Opening Remarks
+				</div>
+
+				<h1 class="General_Title">
+					Blank slides
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('Default')">
+					Black screen
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('Empty_Slide')">
+					Blank screen
+				</div>
+			</div>					
 		</div>
 
 
