@@ -166,7 +166,8 @@
 
 .TitleScreen_Title_Text{
     position: absolute;
-    height: 20vh;
+    /* height: 20vh; */
+    width: 100%;
     opacity: 0%;
     animation-name: TitleScreen_Title_Text_Flicker;
     animation-duration: 0.2s;
@@ -203,7 +204,8 @@
 
 .TitleScreen_Title_Text_Glow{
     position: absolute;
-    height: 20vh;
+    /* height: 20vh; */
+    width: 100%;
     opacity: 50%;
     opacity: 0%;
     animation-name: TitleScreen_Title_Text_Glow_Flicker;
@@ -242,7 +244,8 @@
 
 .TitleScreen_Title_Text_Backlight{
     position: absolute;
-    height: 20vh;
+    /* height: 20vh; */
+    width: 100%;
     opacity: 50%;
     opacity: 0%;
     animation-name: TitleScreen_Title_Text_Backlight_Fade;
