@@ -1,0 +1,130 @@
+<html>
+
+<head id="pageElement_Head">
+	<title id="pageElement_PageTitle">
+		Dynamic Game Graphics
+	</title>
+
+	<style>
+
+	</style>
+	<link rel="stylesheet" href="Scripts/App_Stylesheet_ELMSUI.css">
+	<link rel="stylesheet" href="Scripts/App_Stylesheet_Debugging.css">
+	<!-- <link rel="stylesheet" href="Scripts/DL_Stylesheet.css"> -->
+	<link rel="stylesheet" href="Scripts/App_Stylesheet_Animations.css">
+	<link rel="stylesheet" href="Scripts/App_Stylesheet_Reference.css">
+	<link rel="stylesheet" href="Scripts/GG_Stylesheet_Screens.css">
+	<link rel="icon" type="image/png" href="Assets/Icons/favicon_old.png" sizes="96x96" id="pageElement_favicon">
+	<!-- Default intended fonts -->
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Roboto&display=swap"
+		rel="stylesheet"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+</head>
+
+<body class="MainPage" onload="Slides_ResetToDefaultSlide()">
+	<script src="Scripts/App_Javascript_Debugging.js"></script>
+	<!-- <script src="Scripts/App_Javascript_Properties.js"></script> -->
+	<script src="Scripts/App_Javascript_KeyboardControls.js"></script>
+	<script src="Scripts/App_Javascript_Extras.js"></script>
+	<script src="Scripts/App_Javascript_UI.js"></script>
+	<script src="Scripts/App_Javascript_ProfileSystem.js"></script>
+	<script src="Scripts/GG_Javascript_Controls.js"></script>
+	<script src="Scripts/GG_Javascript_Receiver.js"></script>
+
+    <div class="Page_Overlays" style="display: none">
+		<div class="Debugger_Console" id="pageElement_Debugger_Console" style="display: none">
+			<div class="Debugger_Console_Results" id="pageElement_Debugger_Console_Text"></div>
+			<div class="Debugger_Console_CommandEntry">
+				<input class="Debugger_Console_CommandEntry_Input" id="pageElement_Debugger_Console_CommandEntry_Input"
+					placeholder="Enter console command and press Enter"></input>
+			</div>
+		</div>
+    </div>
+
+    <main class="GG_Screen" id="GG_Screen">
+		<div class="GG_Screen_Slide" id="TitleScreen" Name="Default">
+			
+        </div>
+		<div class="GG_Screen_Slide" id="TitleScreen" Name="FG_Countdown">
+			<div class="TitleScreen_Background">
+				<img src="Assets/Images/Segments/BG_Filipino Genius.png" class="TitleScreen_Background_Main" Animated="true"/>
+				<!-- <img src="Assets/Images/Title/Background_Letters.png" class="TitleScreen_Background_Letters" Animated="true"/> -->
+			</div>
+            <div class="TitleScreen_Title_Main">
+                <h1 class="Countdown_Text" id="Countdown_Text">
+					3:00
+				</h1>
+            </div>
+        </div>
+        <div class="GG_Screen_Slide" id="TitleScreen" Name="FG_TitleScreen_Parent">
+			<div class="TitleScreen_Background">
+				<img src="Assets/Images/Title/Background_Main.png" class="TitleScreen_Background_Main" Animated="true"/>
+				<img src="Assets/Images/Title/Background_Letters.png" class="TitleScreen_Background_Letters" Animated="true"/>
+			</div>
+            <div class="TitleScreen_Title_Main">
+                <img src="Assets/Images/Title/Title_Secondary_Title_Glow.png" class="TitleScreen_Title_Text_Glow" id="TSTTG_1" Animated="true"/>
+                <img src="Assets/Images/Title/Title_Primary_1_Glow.png" class="TitleScreen_Title_Text_Glow" id="TSTTG_2" Animated="true"/>
+                <img src="Assets/Images/Title/Title_Primary_2_Glow.png" class="TitleScreen_Title_Text_Glow" id="TSTTG_3" Animated="true"/>
+                <img src="Assets/Images/Title/Title_Primary_3_Glow.png" class="TitleScreen_Title_Text_Glow" id="TSTTG_4" Animated="true"/>
+                <img src="Assets/Images/Title/Title_Primary_4_Glow.png" class="TitleScreen_Title_Text_Glow" id="TSTTG_5" Animated="true"/>
+
+                <img src="Assets/Images/Title/Title_Backlight.png" class="TitleScreen_Title_Text_Backlight" Animated="true"/>
+
+                <img src="Assets/Images/Title/Title_Secondary_Title.png" class="TitleScreen_Title_Text" id="TSTT_1" Animated="true"/>
+                <img src="Assets/Images/Title/Title_Primary_1.png" class="TitleScreen_Title_Text" id="TSTT_2" Animated="true"/>
+                <img src="Assets/Images/Title/Title_Primary_2.png" class="TitleScreen_Title_Text" id="TSTT_3" Animated="true"/>
+                <img src="Assets/Images/Title/Title_Primary_3.png" class="TitleScreen_Title_Text" id="TSTT_4" Animated="true"/>
+                <img src="Assets/Images/Title/Title_Primary_4.png" class="TitleScreen_Title_Text" id="TSTT_5" Animated="true"/>
+            </div>
+        </div>
+		<div class="GG_Screen_Slide" Name="FG_TitleScreen">
+			<div class="TitleScreen_Background">
+				<img src="Assets/Images/Segments/BG_Filipino Genius.png" class="TitleScreen_Background_Main" Animated="true"/>
+				<!-- <img src="Assets/Images/Title/Background_Letters.png" class="TitleScreen_Background_Letters" Animated="true"/> -->
+			</div>
+			<div class="TitleScreen_Title_Main">
+				<img src="Assets/Images/Segments/Filipino Genius.png" class="Segment_Title" Animated="true"/>
+			</div>
+		</div>
+		<div class="GG_Screen_Slide" Name="FG_PointingScreen">
+			<div class="TitleScreen_Background">
+				<img src="Assets/Images/Segments/BG_Filipino Genius.png" class="TitleScreen_Background_Main" Animated="true"/>
+				<!-- <img src="Assets/Images/Title/Background_Letters.png" class="TitleScreen_Background_Letters" Animated="true"/> -->
+			</div>
+			<div class="FG_PointingScreen_Winner" id="FG_PointingScreen_Winner">
+				<h1 class="FG_PointingScreen_Winner_Text_Main" id="FG_PointingScreen_Winner_Text">
+					Team 1 wins!
+				</h1>
+				<h1 class="FG_PointingScreen_Winner_Text_Subtitle">
+					Winner winner chicken dinner!
+				</h1>
+			</div>
+			<div class="FG_PointingScreen">
+				<div class="FG_PointingScreen_Item">
+					<h1 class="FG_PointingScreen_Item_Title">
+						TEAM 1
+					</h1>
+					<h1 class="FG_PointingScreen_Item_Value" id="FG_PointingScreen_Value_1">
+						00
+					</h1>
+				</div>
+				<div class="FG_PointingScreen_Item">
+					<h1 class="FG_PointingScreen_Item_Title">
+						TEAM 2
+					</h1>
+					<h1 class="FG_PointingScreen_Item_Value" id="FG_PointingScreen_Value_2">
+						00
+					</h1>
+				</div> 
+			</div>
+		</div>
+		<div class="GG_Screen_Slide" Name="Empty_Slide">
+			<div class="TitleScreen_Background">
+				<img src="Assets/Images/Title/Background_Main.png" class="TitleScreen_Background_Main" Animated="true"/>
+				<img src="Assets/Images/Title/Background_Letters.png" class="TitleScreen_Background_Letters" Animated="true"/>
+			</div>
+		</div>
+    </main>
+</body>

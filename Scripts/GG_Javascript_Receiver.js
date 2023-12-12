@@ -120,3 +120,35 @@ function Timer_Update_Timer(){
 function Timer_Stop_Timer(){
     Timer_Status = 0;
 }
+
+function FG_Points_UpdateScore(Team, Value){
+    if (Team == "Team1"){
+        document.getElementById("FG_PointingScreen_Value_1").innerHTML = Value;
+    } else {
+        document.getElementById("FG_PointingScreen_Value_2").innerHTML = Value;
+    }
+}
+
+function FG_Points_DeclareWinner(Team){
+    document.getElementById("FG_PointingScreen_Winner").style.animation = null;
+    document.getElementById("FG_PointingScreen_Winner").style.opacity = "100%";
+    document.getElementById("FG_PointingScreen_Winner").style.display = "flex";
+    document.getElementById("FG_PointingScreen_Winner").style.animation = "SlideUp";
+    if (Team == "Team1"){
+        document.getElementById("FG_PointingScreen_Winner_Text").innerHTML = "Team 1 wins!";
+    } else {
+        document.getElementById("FG_PointingScreen_Winner_Text").innerHTML = "Team 2 wins!";
+    }
+    setTimeout(function(){
+        document.getElementById("FG_PointingScreen_Winner").style.opacity = "0%";
+    }, 5000);
+}
+
+
+function HS_Points_UpdateScore(Team, Value){
+    if (Team == "Team1"){
+        document.getElementById("HS_PointingScreen_Value_1").innerHTML = Value;
+    } else {
+        document.getElementById("HS_PointingScreen_Value_2").innerHTML = Value;
+    }
+}

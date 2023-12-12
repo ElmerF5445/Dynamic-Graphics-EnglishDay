@@ -377,6 +377,30 @@
 				Screen 3 - Human Scrabble
 			</p>
 		</div>
+		<div class="Sidebar_Item" id="Screen_4" onclick="trigger_ChangeTab_test(this.id)">
+			<div class="Sidebar_Item_Letter" id="tabIcon_Screen_4">
+				<h2 class="Sidebar_Item_Letter_Text"> 4 </h2>
+			</div>
+			<p class="Sidebar_Item_Text">
+				Fetch It & Phrase It
+			</p>
+			<!-- Specify the title of the tab that will be displayed in the header (must have pageelement_header_UsesTitles enabled) -->
+			<p class="Sidebar_Item_Text_forHeader"style="display: none" id="tabTitle_Screen_4">
+				Screen 4 - Fetch It & Phrase It
+			</p>
+		</div>
+		<div class="Sidebar_Item" id="Screen_5" onclick="trigger_ChangeTab_test(this.id)">
+			<div class="Sidebar_Item_Letter" id="tabIcon_Screen_5">
+				<h2 class="Sidebar_Item_Letter_Text"> 5 </h2>
+			</div>
+			<p class="Sidebar_Item_Text">
+				IQ and A
+			</p>
+			<!-- Specify the title of the tab that will be displayed in the header (must have pageelement_header_UsesTitles enabled) -->
+			<p class="Sidebar_Item_Text_forHeader"style="display: none" id="tabTitle_Screen_5">
+				Screen 5 - IQ and A
+			</p>
+		</div>
 	</div>
 	<main class="Page_Content" id="pageElement_Content" data-id="">
 		<div class="Page_MainContent" id="Page_MainContent" data-id="">
@@ -486,14 +510,14 @@
 				<h1 class="General_Title">
 					Pointing Screen
 				</h1>
-				<div class="General_Button" onclick="Slides_SwitchToSlide('Intro_1')">
+				<div class="General_Button" onclick="Slides_SwitchToSlide('FG_PointingScreen')">
 					Switch to this slide
 				</div>
 				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
-					<h1 class="General_Title">
+					<h1 class="General_Title" id="FG_Points_Display_Team_1">
 						0
 					</h1>
-					<h1 class="General_Title">
+					<h1 class="General_Title" id="FG_Points_Display_Team_2">
 						0
 					</h1>
 				</div>
@@ -511,6 +535,12 @@
 					</div>
 					<div class="General_Button" onclick="FG_Points_UpdateScore('Team2')">
 						Update score for Team 2
+					</div>
+					<div class="General_Button" onclick="FG_Points_DeclareWinner('Team1')">
+						Declare Team 1 as winner
+					</div>
+					<div class="General_Button" onclick="FG_Points_DeclareWinner('Team2')">
+						Declare Team 2 as winner
 					</div>
 				</div>
 				
@@ -580,10 +610,10 @@
 					Switch to this slide
 				</div>
 				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
-					<h1 class="General_Title">
+					<h1 class="General_Title" id="HS_Points_Display_Team_1">
 						0
 					</h1>
-					<h1 class="General_Title">
+					<h1 class="General_Title" id="HS_Points_Display_Team_2">
 						0
 					</h1>
 				</div>
@@ -596,11 +626,17 @@
 					</p>
 					<input type="text" class="Input_Text" placeholder="Team 1 points" id="HS_Points_Team_1"/>
 					<input type="text" class="Input_Text" placeholder="Team 2 points" id="HS_Points_Team_2"/>
-					<div class="General_Button" onclick="FG_Points_UpdateScore('Team1')">
+					<div class="General_Button" onclick="HS_Points_UpdateScore('Team1')">
 						Update score for Team 1
 					</div>
-					<div class="General_Button" onclick="FG_Points_UpdateScore('Team2')">
+					<div class="General_Button" onclick="HS_Points_UpdateScore('Team2')">
 						Update score for Team 2
+					</div>
+					<div class="General_Button" onclick="FG_Points_DeclareWinner('Team1')">
+						Declare Team 1 as winner
+					</div>
+					<div class="General_Button" onclick="FG_Points_DeclareWinner('Team2')">
+						Declare Team 2 as winner
 					</div>
 				</div>
 				
@@ -625,6 +661,102 @@
 					Blank screen
 				</div>
 			</div>	
+
+			<div class="Tab_Container" id="tab_Screen_4">
+				<h1 class="General_Title">
+					Title Screen
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('FI_TitleScreen_Parent')">
+					Switch to event title screen
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('FI_TitleScreen')">
+					Switch to segment title screen
+				</div>
+			</div>
+
+			<div class="Tab_Container" id="tab_Screen_5">
+				<h1 class="General_Title">
+					Title Screen
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('QA_TitleScreen_Parent')">
+					Switch to event title screen
+				</div>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('QA_TitleScreen')">
+					Switch to segment title screen
+				</div>
+				
+				<h1 class="General_Title">
+					Questions
+				</h1>
+				<div class="General_Button" onclick="Slides_SwitchToSlide('QA_QuestionScreen')">
+					Switch to this slide
+				</div>
+				<div class="General_Button" onclick="QA_GetQuestions()">
+					Load questions
+				</div>
+				<h2 class="General_Title" id="QA_QuestionScreen_Question">
+					Question
+				</h2>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
+					<div class="General_Button" id="QA_QuestionScreen_Choices_Item_1">
+						Choice 1
+					</div>
+					<div class="General_Button" id="QA_QuestionScreen_Choices_Item_2">
+						Choice 2
+					</div>
+					<div class="General_Button" id="QA_QuestionScreen_Choices_Item_3">
+						Choice 3
+					</div>
+					<div class="General_Button" id="QA_QuestionScreen_Choices_Item_4">
+						Choice 4
+					</div>
+				</div>
+
+				<p class="General_Paragraph" id="QA_QuestionScreen_Choices_CorrectAnswer">
+					Correct answer
+				</p>
+				
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
+					<div class="General_Button" onclick="QA_Question_Previous()">
+						Previous question
+					</div>
+					<div class="General_Button" onclick="QA_Question_Next()">
+						Next question
+					</div>
+					<div class="General_Button">
+						Answer is correct
+					</div>
+					<div class="General_Button">
+						Answer is wrong
+					</div>
+				</div>
+
+				<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; margin-bottom: 10px">
+					<p class="General_Paragraph">
+						Player 1
+					</p>
+					<p class="General_Paragraph">
+						Player 2
+					</p>
+					<input type="text" class="Input_Text" placeholder="Team 1 points" id="FG_Points_Team_1"/>
+					<input type="text" class="Input_Text" placeholder="Team 2 points" id="FG_Points_Team_2"/>
+					<div class="General_Button" onclick="FG_Points_UpdateScore('Team1')">
+						Update score for Team 1
+					</div>
+					<div class="General_Button" onclick="FG_Points_UpdateScore('Team2')">
+						Update score for Team 2
+					</div>
+					<div class="General_Button" onclick="FG_Points_DeclareWinner('Team1')">
+						Declare Team 1 as winner
+					</div>
+					<div class="General_Button" onclick="FG_Points_DeclareWinner('Team2')">
+						Declare Team 2 as winner
+					</div>
+				</div>
+
+			</div>
+
+
 		</div>
 
 

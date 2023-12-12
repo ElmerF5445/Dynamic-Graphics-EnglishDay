@@ -1,0 +1,26 @@
+==================
+Link index name here
+This text file contains the records of the gallery that is currently up. ES_Gallery.html will use this file to generate the article list.
+To add a record, follow the format for one line: Album Name%&Album Photographer(s)%&Album Category%&Date Published%&File name of the index file associated with the album (remove Index_ prefix and .txt extension)%&Thumbnail image
+Scanning starts at line 7. 
+==================
+What is the highest mountain in the Philippines?%&Mount Pulag%&Mount Apo%&Mount Mayon%&Mount Kitanglad%&Mount Apo
+What is the largest island in the Philippines in terms of land area?%&Luzon%&Visayas%&Mindanao%&Palawan%&Luzon
+Who developed the theory of relativity?%&Isaac Newton%&Galileo Galilei%&Albert Einstein%&Stephen Hawking%&Albert Eistein
+What is the largest continent on Earth?%&Africa%&Europe%&Asia%&North America%&Asia
+What is the capital city of Japan?%&Osaka%&Kyoto%&Tokyo%&Seoul%&Tokyo
+What is the world's smallest primate, native to the Philippines?%&Gibbon%&Tarsier%&LEmur%&Marmoset%&Tarsier
+Which volcano, known for its perfect cone shape, is located in the province of Albay?%&Taal Volcano%&Mount Mayon%&Mount Pinatubo%&Mount Pulag%&Mayon Volcano
+What does HTML stand for in the context of web development?%&HyperText Markup Language%&High-Level Text Markup Language%&Hyperlink and Text Markup Language%&High-Level Textual Markup Language%&HyperText Markup Language
+What does the acronym LAN stand for in the context of networking?%&Long Area Network%&Local Access Network%&Local Area Network%&Large Area Network%&Local Area Network
+How many bones are there in the adult human body?%&206%&215%&180%&230%&206
+What is the body's largest internal organ?%&Heart%&Kidney%&Liver%&Lungs%&Liver
+Which famous computer scientist and mathematician is often considered the "father of artificial intelligence?"%&Bill Gates%&Alan Turing%&Steve Jobs%&Tim Berners-Lee%&Alan Turing
+Which Philippine province is known as the "Summer Capital of the Philippines"?%&Cebu%&Davao%&Baguio%&Palawan%&Baguio
+Who is the national hero of the Philippines who fought against Spanish colonization and is known for leading the Katipunan?%&Jose Rizal%&Emilio Aguinaldo%&Andres Bonifacio%&Manuel L. Quezon%&Andres Bonifacio
+What is the official national sport of the Philippines?%&Basketball%&Volleyball%&Arnis%&Boxing%&Arnis
+Which Philippine festival is known for its colorful street dancing and vibrant costumes?%&Panagbenga Festival%&Ati-Atihan Festival%&Sinulog Festival%&Pahiyas Festival%&Sinulog Festival
+What is the traditional Filipino dance often performed at festive occasions?%&Singkil%&Tinikling%&Pandanggo%&Maglalatik%&Tinikling
+What are the two novels written by Dr. Jose Rizal?%&Noli Me Tangere and El Filibusterismo%&Crisostomo Ibarra and the Order of the Stone%&El Filibusterismo and Si Janus Silang at ang Tiyanak ng Tabon%&Ang Mundo ni Andong Agimat and Alamat ng Lamok%&Noli Me Tangere and El Filibusterismo
+What is the chemical symbol for water?%&H2O%&CO2%&O2%&CH4%&H2O
+Who painted the Mona Lisa?%&Pablo Picasso%&Vincent van Gogh%&Leonardo da Vinci%&Michelangelo%&Leonardo da Vinci

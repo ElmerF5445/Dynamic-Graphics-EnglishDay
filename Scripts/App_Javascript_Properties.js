@@ -122,7 +122,7 @@ function Startup_Load_Properties(){
             pageProperty_enableGreetings = 0;
             pageProperty_enableSidebar = 1;
             pageProperty_enableCategoryLabelIcons = 0;
-            pageProperty_lockSidebar = 1;
+            pageProperty_lockSidebar = 0;
             pageProperty_enableStatusBar = 0;
             pageProperty_useProfileSystem = 0;
             pageProperty_sidebarExpandedWidth = 300;

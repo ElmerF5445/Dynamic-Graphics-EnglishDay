@@ -351,7 +351,7 @@
     position: absolute;
     margin: 0;
     line-height: 0.9;
-    -webkit-text-stroke: 4px rgb(151, 78, 9);;
+    -webkit-text-stroke: 4px rgb(151, 78, 9);
 }
 
 .Intro_Text{
@@ -360,4 +360,94 @@
     text-align: center;
     font-size: 7vh;
     text-transform: uppercase;
+}
+
+.Segment_Title{
+    /* position: absolute;
+    height: 50vh; */
+    opacity: 100%;
+    animation-name: Bounce_Slight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition: 0.5s;
+}
+
+.FG_PointingScreen{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 500;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    user-select: none;
+}
+
+.FG_PointingScreen_Item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.FG_PointingScreen_Item_Title{
+    font-family: Hansief;
+    color:rgb(255, 213, 3);
+    margin: 0;
+    font-size: 10vh;
+    -webkit-text-stroke: 4px rgb(151, 78, 9);
+}
+
+.FG_PointingScreen_Item_Value{
+    font-family: Hauser;
+    color:rgb(255, 213, 3);
+    margin: 0;
+    font-size: 60vh;
+    -webkit-text-stroke: 4px rgb(151, 78, 9);
+}
+
+.FG_PointingScreen_Winner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 501;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 31, 0.82);
+    animation-name: SlideUp;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    transition: opacity 1s;
+}
+
+.FG_PointingScreen_Winner_Text_Main{
+    font-family: Hauser;
+    color:gold;
+    margin: 0;
+    font-size: 15vw;
+    -webkit-text-stroke: 4px rgb(151, 78, 9);
+}
+
+.FG_PointingScreen_Winner_Text_Subtitle{
+    font-family: Hauser;
+    color:gold;
+    margin: 0;
+    font-size: 5vw;
+    -webkit-text-stroke: 4px rgb(151, 78, 9);
+}
+
+@keyframes SlideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    40% {
+        transform: translateY(0%);
+    }
+    60% {
+        transform: translateY(-100%);
+    }
 }
