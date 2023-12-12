@@ -19,6 +19,13 @@
 	font-style: normal;
 }
 
+@font-face{
+	font-family: "Hauser";
+	src: url("../Assets/Fonts/Ha.ttf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
 *[Animation_State="Animation_State_Paused"]{
     animation-play-state: paused;
 }
@@ -340,7 +347,7 @@
     font-family: Cold_Warm;
     color:rgb(255, 213, 3);
     text-align: center;
-    font-size: 60vh;
+    font-size: 30vh;
 }
 
 .Section_Title{
